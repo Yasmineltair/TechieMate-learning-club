@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="single">
+    <div class="single_roadmap">
+
+        <div class="const">
+            <h3>Web developement  </h3>
+            <h4>Master the digital realm: Your proficiency in web developement</h4>
+            <p>The web developement track offers a comprehensive journey into crafting dynamic and interactive websites and applications.From mastering HTML, CSS and Javascript fundamentals to diving deep into frameworks like React or Angular,this track equips learners with the skills needed to create seamless, user-friendly online experiences.
+            </p>
+        </div>
+        <div class="pic">
+            <img decoding="async" src="../static/images/web developement 2.webp">
+        </div>
+    </div>
+    <div class="courses">
+        <button id="showButton">
+            Intro to Web Developement
+        </button>
+        <button id="showButton">
+            Node.js Backend Developement
+        </button>
+        <button id="showButton">
+            Database Management
+        </button>
+        <button id="showButton">
+            Full-Stack Developement
+        </button>
+        <button id="showButton">
+            Web Security
+        </button>
+    </div>
+    <div class="chosen" id="box">
+        <p > The "Database Management" course delves into fundamental principles of Database
+            design and SQL querying.Students learn to construct effecient database schemas, execute complex queries, and manage data effectively.Understanding databases is 
+            crucial for storing and receiving information in web applications, enabling seamless data-driven.
+        </p>
+        <button>
+            <a href="{{ url_for('enroll_in_roadmap')}}">Go to course </a>
+        </button>
+    </div>
+    <script>
+        const box = document.getElementById('box');
+        const showButton = document.getElementById('showButton');
+
+        function showbox() {
+            box.style.display = 'flex';
+        }
+            showButton.addEventListener('click', showbox);
+    </script>
+    <hr>
+    <h4>Learn more about  other roadmaps</h4>
+    <div class="over_view">
+        <div class="another_roadmap">
+                <img src="../static/images/mob.jpg" alt=""/>
+                <h5>
+                    <a href="#">Mobile developement</a>
+                </h5>
+                <p> Creating user-centric experiences for every device and plateform</p>
+        </div>
+        <div class="another_roadmap">
+                <img src="../static/images/artificial-intelligence.jpg" alt=""/>
+                <h5>
+                    <a href="Artificial_intelligence"> Artificial Intelligence</a>
+                </h5>
+                <p> Unleashing the power of intelligent systems for tomorrow's world</p>
+        </div>
+        <div class="another_roadmap">
+                <img src="../static/images/machine learning.jpeg" alt=""/>
+                <h5>
+                    <a href="#machine_learning">Machine Learning</a>
+                </h5>
+                <p>Unlocking patterns and predictions in data for informed decision-making </p>
+        </div>
+        <div class="another_roadmap">
+                <img src="../static/images/data science.jpg" alt=""/>
+                <h5>
+                    <a href="#data_science">Data Science</a>
+                </h5>
+                <p>Decoding the language of data to uncover insights and drive innovation </p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block body %}
+        <!-- start login -->
+        <div class="log">
+            <div class="content">
+                <div id="signup" class="signup">
+                        <h3 class="title">sign up</h3>
+                        <form method="post" class="form">
+                            <div class="form">
+                                <input id="user-name" type="name" placeholder="First-name" class="input" required/>
+                                <input id="user-name" type="name" placeholder="Last-name" class="input" required/>
+                                <input id="phone-number" type="tel" placeholder="mobile number" class="input"/>
+                                <input id="email-input" type="email" placeholder="Email" class="input" required/>
+                                <input type="password" placeholder="Password" class="input" id="password" required />
+                                <input type="password" placeholder="Password_confirm" class="input" id="confirm_password" required />
+                                <span id="passwordError" class="error-message" 
+                                style="color: red" ></span>
+                                </div>
+                                <button type="submit" class="submit">
+                                    <a href="{{ url_for('home') }}">Sign up</a>
+                                </button>
+                            </div>
+                        </form>
+                        <script>
+                            document.getElementById("confirm_password").addEventListener("input", function() {
+                                var passwordInput = document.getElementById("password");
+                                var confirmPasswordInput = document.getElementById("confirm_password");
+                                var passwordError = document.getElementById("passwordError");
+                    
+                                if (passwordInput.value !== confirmPasswordInput.value) {
+                                    passwordError.textContent = "Passwords do not match!! try again";
+                                } else {
+                                    passwordError.textContent = "";
+                                }
+                            });
+                        </script>
+                </div>
+            </div>
+        </div>
+<!-- end login -->
+{% endblock %}

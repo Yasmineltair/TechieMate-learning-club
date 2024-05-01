@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="roadmaps">
+    <div class="title">
+        <h3> Discover our roadmaps</h3>
+    </div>
+    <div class="content">
+        <div class="paragraph">
+            <p> Welcome to our roadmaps page, your gateway to structured learning journeys tailored to your interests
+                and goals.Explore our curated collection of roadmaps in artificial intelligence, mobile developement, machine learning,
+                data science, and beyond.whether you're beginner looking to start your journey or an experienced professional seeking to
+                expand your skills, our roadmaps offer clear paths to mastery in the ever-evolving world of technology.Unlock your potential
+                and embark on a transformative learning experience with Techie Mate.
+            </p>
+        </div>
+    </div>
+    <div class="roads">
+        <div class="single_roadmap">
+            
+            <div class="const">
+                <h4>
+                    <a href="{{ url_for('get_single_roadmap') }}"> Web developement</a>  
+                </h4>
+                <p>The web developement track offers a comprehensive journey into crafting dynamic and interactive websites and applications.From mastering HTML, CSS and Javascript fundamentals to diving deep into frameworks like React or Angular,this track equips learners with the skills needed to create seamless, user-friendly online experiences.
+                </p>
+            </div>
+            <div class="pic">
+                <img decoding="async" src="../static/images/web developement 2.webp">
+            </div>
+        </div>
+        <div class="single_roadmap">
+            <div class="const">
+                <h4>Mobile developement  </h4>
+                <p>Craft innovate mobile experiences and conquer the app ecosystem with Techie Mate's mobile developement track.From designing intuitive user interfaces to optimizing performance across plateforms,unleash your creativity and build the next generation of mobile apps.</p>
+            </div>
+            <div class="pic">
+                <img decoding="async" src="../static/images/mob.jpg">
+            </div>
+        </div>
+        <div class="single_roadmap">
+            <div class="const">
+                <h4>Data science </h4>
+                <p>Data science is the study of data to extract meaningful insights for business. It is a multidisciplinary approach that combines principles and practices from the fields of mathematics, statistics, artificial intelligence, and computer engineering to analyze large amounts of data.</p>
+            </div>
+            <div class="pic">
+                <img decoding="async" src="../static/images/data science.jpg">
+            </div>
+        </div>
+        <div class="single_roadmap">
+            <div class="const">
+                <h4>Machine Learning  </h4>
+                <p>Machine learning (ML) is a branch of artificial intelligence (AI) and computer science that focuses on the using data and algorithms to enable AI to imitate the way that humans learn, gradually improving its accuracy.</p>
+            </div>
+            <div class="pic">
+                <img decoding="async" src="../static/images/machine learning.jpeg">
+            </div>
+        </div>
+        <div class="single_roadmap">
+            <div class="const">
+                <h4>Artificial Intelligence (AI) </h4>
+                <p>Craft innovate mobile experiences and conquer the app ecosystem with Techie Mate's mobile developement track.From designing intuitive user interfaces to optimizing performance across plateforms,unleash your creativity and build the next generation of mobile apps.</p>
+            </div>
+            <div class="pic">
+                <img decoding="async" src="../static/images/artificial intellegence.webp">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

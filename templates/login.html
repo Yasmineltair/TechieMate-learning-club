@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block body %}
+        <!-- start login form -->
+        <div class="log">
+            <div class="content">
+                <div id="login" class="login">
+                        <h3 class="title">Log in</h3>
+                        <form method="post" class="form">
+                            <div class="form">
+                                <input id="email-input" type="email" placeholder="Email" class="input" required/>
+                                <input id="password" type="password" placeholder="password" class="input" required/>
+                                <button type="submit" class="submit">
+                                    <a href="{{ url_for('home')}}">Log in</a>
+                                </button>
+                            </div>
+                        </form>
+                        <p class="not-a-member"> Don't have an account ?
+                            <a href="{{ url_for('create_user') }}"> Sign-Up </a>
+                        </p>
+                </div>
+            </div>
+        </div>
+        <!-- end login form -->
+{% endblock %}
