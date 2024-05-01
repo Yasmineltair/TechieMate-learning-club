@@ -1,0 +1,102 @@
+/* starting Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: rgb(19, 19, 87);
+    --main-transition: 0.3s;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: relative;
+    background-color: #c6dde7;
+    -webkit-box-shadow: 0 0 10px #ddd;
+    -moz-box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    /* min-height: 70px; */
+}
+.header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 60px;
+}
+.header .container .logo img{
+    width: 250px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    z-index: 2;
+    opacity: 70%;
+}
+.header .main-nav {
+    display: flex;
+}
+.header .main-nav > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    position: relative;
+    color: rgb(19, 19, 87);
+    padding: 0 30px;
+    overflow: hidden;
+    font-size: 18px;
+    transition: var(--main-transition);
+}
+.header .main-nav > li > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--main-color);
+    top: 0;
+    left: -100%;
+    transition: var(--main-transition);
+}
+.header .main-nav > li > a:hover {
+    color: var(--main-color);
+    background-color: #fafafa;
+}
+.head .main-nav > li > a:hover::before {
+    left: 0;
+}
+
+.buttons .login  {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 11px;
+    background-color: green;  
+}
+.buttons .sign-up {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+}
+.buttons a {
+    color: white;
+}

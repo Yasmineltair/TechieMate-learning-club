@@ -1,0 +1,131 @@
+.single {
+    padding: 15px 15px 5px 15px;
+}
+.single_roadmap {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    position: relative;
+}
+.single_roadmap .const {
+    max-width: 800px;
+    padding: 15px;
+}
+.single_roadmap .const h3 {
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(19, 19, 87);
+    
+}
+.single_roadmap .const h4 {
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(19, 19, 87);
+    
+}
+.single_roadmap .const p {
+    line-height: 1.4;
+    font-size: 16px;
+    margin-top: -20px;
+    padding-left: 15px;
+}
+.single_roadmap .pic img{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 15px;
+    border-radius: .25rem;
+    border: 1px solid transparent;
+    margin-right: 20px;
+}
+.courses {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.courses button {
+    background-color: rgb(140, 140, 211);
+    /* background-color: rgb(42, 130, 101); */
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 7px;
+}
+.courses button a {
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 16px;
+    
+}
+.chosen {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+}
+.chosen p {
+    max-width: 900px;
+    line-height: 1.4;
+}
+.chosen button {
+    margin-left: 100px;
+    background-color: rgb(246, 115, 15);
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 7px;
+}
+.chosen button a {
+    color: white;
+}
+.single h4 {
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(19, 19, 87);
+
+}
+.over_view {
+    display: flex;
+    padding: 20px;
+}
+.over_view .another_roadmap {
+    width: 350px;
+    height: 300px;
+    margin-right: 10px;
+    background-color: #eee;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    }
+.over_view .another_roadmap img {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    padding-top: 40px;
+}
+.over_view .another_roadmap h5 {
+    padding: 0;
+}
+.over_view .another_roadmap h5 a{
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(19, 19, 87);
+}
+.over_view .another_roadmap p {
+    align-items: center;
+    padding-left: 15px;
+    line-height: 1.6;
+    margin-top: -5px;
+}
+#box {
+    display: none;
+}

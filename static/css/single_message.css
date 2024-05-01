@@ -1,0 +1,145 @@
+.messages {
+    padding: 20px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.message_all {
+    height: 100hv;
+    padding-right: 20px;
+}
+.messages_all h2 {
+    padding-left: 20px;
+    color: var(--main-color);
+    font-style: italic;
+}
+.single_message .search{
+    margin-bottom: 20px;
+    
+}
+.single_message .search input{
+    width: 280px;
+    padding: 10px;
+}
+.last_messages {
+    border: 1px solid #eee;
+}
+.last_messages .single_last_message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.last_messages .single_last_message img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.last_messages .single_last_message .text .last {
+    color: #b6b1b1;
+}
+.chat {
+    /* padding-left: 40px; */
+    flex: 1;
+    padding-left: 20px;
+}
+.roadmap_info {
+    border: 1px solid #eee;
+    /* background-color: rgb(157, 193, 193); */
+}
+.chat .roadmap_info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chat .roadmap_info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.chat .roadmap_info h2 {
+    color: var(--main-color);
+    /* margin: 5px; */
+}
+.chat .current_chat {
+    padding: 20px;
+}
+.current_chat .chat_member{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 5px;
+    position: relative;
+}
+.current_chat .chat_member img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.chat_member .text {
+    width: 200px;
+    background-color: white;
+    padding-left: 25px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    height: 40px;
+    
+}
+.chat_member .text p{
+    font-size: 16px;
+    line-height: 0.5;
+}
+.current_chat {
+    background-color: #eee;
+    border: 1px solid #eee;
+}
+.send_message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.send_message img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.send input {
+    width: 500px;
+    position: relative;
+}
+.current_chat .chat_member_position{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 5px;
+    position: relative;
+}
+.current_chat .chat_member_position img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px;
+    position: absolute;
+    right: 0;
+
+}
+.chat_member_position .text {
+    width: 200px;
+    background-color: rgb(110, 147, 240);
+    padding-left: 25px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    height: 40px;
+    position: absolute;
+    right: 90px;
+    line-height: 0.5;
+}
+.chat_member_position .text p{
+    /* padding-top: -50px; */
+    font-size: 16px;
+    line-height: 0.5;
+}
