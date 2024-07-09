@@ -5,7 +5,6 @@ Introduction:
 Welcome, to Techie Mate
 If you lose your interest and energy, if you don't have
  your roardmap or partner to enjoy the journey, welcome to Techie Mate!
-link : http://127.0.0.1:9000/
 
 Usage:
 
